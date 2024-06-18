@@ -1,0 +1,82 @@
+/* ==============================================
+   = Autor: Igor Costa                          
+   = Data de Construção: 20/06/2024
+   = GitHub: https://github.com/vigorcosta2
+   = Email:  portaldovigorcosta@gmail.com
+   = Nome :  Responsivo Orientação a objeto simples (Didático)               
+   ==============================================*/
+
+/*ESTILOS DE CSS*/
+
+:root{
+
+    /* Cor de Fundo */
+    --vermelho: crimson;
+    --laranja:  orangered;
+    --amarelo:  yellow;
+    --azul:     cornflowerblue;
+    --azulado:  cadetblue;
+    --verde:    greenyellow;
+    --roxo:     blueviolet;
+
+
+    /*Fonte*/
+    --fonte: 1em;
+    --fonte-1: 1.5em;
+    --fonte-2: 1.8em;
+    --fonte-3: 2em;
+    --fonte-4: 3em;
+    --fonte-5: 5em;
+}
+
+
+.tela{
+    background: gray;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+ }
+
+/*-----------------------------------------------------------------------CELULAR*/
+
+@media(min-width: 360px) and (max-width:480px){ 
+ 
+    .tela{  background:var(--vermelho);  font-size: var(--fonte);  }
+}
+
+@media(min-width: 480px) and (max-width:640px){ 
+
+    .tela{ background: var(--amarelo); font-size: var(--fonte-1); }
+
+}
+
+@media(min-width: 640px) and (max-width:768px){ 
+ 
+    .tela{ background: var(--laranja) ; font-size: var(--fonte-2); }
+}
+
+/*-------------------------------------------------------------------------TABLET*/
+
+@media(min-width:768px) and (max-width:1024px){
+    
+    .tela{ background: var(--verde); font-size: var(--fonte-3); }
+}
+
+/*-------------------------------------------------------------------------NOTEBOOK / COMPUTADOR*/
+@media(min-width:1024px) and (max-width:1366px){
+    
+    .tela{ background: var(--azul); font-size: var(--fonte-3); }
+}
+
+@media(min-width:1366px) and (max-width:1600px){
+    
+    .tela{ background: var(--azulado) ; font-size: var(--fonte-4); }
+}
+
+/*--------------------------------------------------------------------------MONITOR ALTA RESOLUÇÃO*/
+@media(min-width:1600px) and (max-width: 1920px){
+    
+    .tela{background:var(--roxo); font-size: var(--fonte-5); }
+
+}
